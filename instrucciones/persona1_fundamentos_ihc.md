@@ -38,6 +38,42 @@ Completa esta tabla exacta. Sé concreto, una frase por celda, citando evidencia
 
 **Evidencia a citar en tu justificación de diseño:** E1 (uso móvil en contexto de movimiento, necesita ser rápido) y E4 (el proceso actual tarda 14 min / 9 mensajes — tu pantalla debe reducir pasos desde el inicio).
 
+## Prompt para la IA de Figma (pega esto directo, solo construye TU pantalla)
+
+```
+Diseña UNA sola pantalla móvil (375x812px) para la app "Tutoría Fácil UTA", una
+app para reservar tutorías académicas. Esta pantalla es "Inicio y búsqueda", la
+primera de un flujo de 4 pantallas — no diseñes las otras 3.
+
+Sistema de diseño a usar (si ya existen estos componentes en el archivo, reutilízalos;
+si no, créalos con estos valores exactos):
+- Tipografía: familia sans-serif tipo Inter. Título 20px bold, Subtítulo 16px
+  semibold, Cuerpo 14px regular, Auxiliar 12px regular gris #6B6B6B.
+- Color: acción principal #2F6FED, fondo #FFFFFF, texto #1A1A1A.
+- Grid de espaciado de 8px, márgenes laterales 16px.
+
+Contenido obligatorio de esta pantalla:
+- Encabezado con el nombre de la app y un mensaje corto del objetivo ("Reserva tu
+  tutoría en minutos").
+- Botón primario grande "Reservar tutoría" (el elemento más prominente de toda
+  la pantalla — máxima jerarquía visual).
+- Acceso secundario "Mis tutorías" (botón o tarjeta menos prominente).
+- Sin campos de login ni formularios. Layout limpio, mucho espacio en blanco.
+
+Principios a aplicar: jerarquía visual clara (el botón principal debe destacar
+sobre todo lo demás), figura-fondo (los elementos accionables deben distinguirse
+claramente del fondo), consistencia (usa exactamente los colores y tipografía de
+arriba, no inventes otros).
+
+Nombra el frame "01-Inicio". En Prototype mode, deja preparada la interacción:
+tap en "Reservar tutoría" → navega al frame "02-Horario" (ese frame lo construye
+otro integrante del equipo en el mismo archivo; si aún no existe, deja la
+interacción pendiente de conectar).
+
+Fidelidad baja-media: sin ilustraciones ni fotos reales, solo bloques, tarjetas y
+tipografía bien jerarquizada.
+```
+
 ## Checklist antes de dar por terminada tu parte
 
 - [ ] Matriz completa, sin celdas vacías, con al menos 2 referencias a E1–E10.

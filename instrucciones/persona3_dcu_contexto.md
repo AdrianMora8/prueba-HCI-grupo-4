@@ -64,6 +64,46 @@ Ejemplo de forma (no de contenido final):
 
 **Evidencia a citar:** E5 (confirmaciones que se pierden/mezclan), E10 (necesidad de corregir antes de confirmar), E8 (tolerancia a demoras de red).
 
+## Prompt para la IA de Figma (pega esto directo, solo construye TU pantalla)
+
+```
+Diseña UNA sola pantalla móvil (375x812px) para la app "Tutoría Fácil UTA", una
+app para reservar tutorías académicas. Esta pantalla es "Resumen y confirmación",
+la tercera de un flujo de 4 pantallas — no diseñes las otras 3.
+
+Sistema de diseño a usar (si ya existen estos componentes en el archivo, reutilízalos;
+si no, créalos con estos valores exactos):
+- Tipografía: familia sans-serif tipo Inter. Título 20px bold, Subtítulo 16px
+  semibold, Cuerpo 14px regular, Auxiliar 12px regular gris #6B6B6B.
+- Color: acción principal #2F6FED, fondo #FFFFFF, texto #1A1A1A.
+- Grid de espaciado de 8px, márgenes laterales 16px.
+
+Contenido obligatorio de esta pantalla:
+- Una sola tarjeta resumen con todos los datos ya elegidos: docente, fecha, hora
+  y modalidad (presencial/virtual — si no viene de la pantalla anterior, un
+  selector simple de dos opciones aquí mismo).
+- Botón primario "Confirmar" (ancho completo).
+- Botón secundario "Volver" (para corregir sin perder la selección).
+- Un mensaje de estado breve "Confirmando..." que aparece al tocar "Confirmar"
+  antes de navegar (simula espera de red).
+
+Principios a aplicar: reconocimiento en vez de recuerdo (todos los datos
+visibles en una sola pantalla, el usuario no debe recordar nada de pantallas
+anteriores), carga cognitiva baja (no mostrar más información de la necesaria
+para decidir), retroalimentación clara (el estado "Confirmando..." debe ser
+visible), y posibilidad de corrección (el botón "Volver" debe ser tan visible
+como "Confirmar", no escondido).
+
+Nombra el frame "03-Confirmacion". En Prototype mode, deja preparadas las
+interacciones: tap en "Confirmar" → navega al frame "04-Confirmada"; tap en
+"Volver" → navega al frame "02-Horario" (esos frames los construyen otros
+integrantes del equipo en el mismo archivo; si aún no existen, deja las
+interacciones pendientes de conectar).
+
+Fidelidad baja-media: sin ilustraciones ni fotos reales, solo bloques, tarjetas y
+tipografía bien jerarquizada.
+```
+
 ## Checklist antes de dar por terminada tu parte
 
 - [ ] Contexto de uso completo (las 4 columnas, sin genérico).

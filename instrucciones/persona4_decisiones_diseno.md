@@ -75,6 +75,49 @@ Documenta esto en el PDF (ya está decidido, tu trabajo es formalizarlo y verifi
 5. Documenta todo en `evaluacion/prueba_iteracion.md` (tarea, participante, resultado, tiempo, hallazgo, antes, después).
 6. Haz el commit de esa mejora vinculado al issue/PR correspondiente.
 
+## Prompt para la IA de Figma (pega esto directo)
+
+```
+Voy a construir un archivo de Figma para una app móvil llamada "Tutoría Fácil
+UTA" (reservar tutorías académicas), con 4 pantallas que construirán distintos
+integrantes de mi equipo. Ayúdame primero con la librería de componentes y luego
+con MI pantalla — no diseñes las otras 3 pantallas.
+
+Paso 1 — Librería de componentes (página "🎨 Componentes"):
+- Tipografía: familia sans-serif tipo Inter. Título 20px bold, Subtítulo 16px
+  semibold, Cuerpo 14px regular, Auxiliar 12px regular gris #6B6B6B.
+- Color: acción principal #2F6FED, fondo #FFFFFF, texto #1A1A1A, éxito #1E9E5A
+  (siempre con ícono check + texto, nunca solo color), error #D93636 (siempre
+  con ícono X + texto, nunca solo color).
+- Grid de espaciado de 8px, márgenes laterales 16px.
+- Crea como componentes reales (con variantes, no copias sueltas): botón
+  primario, botón secundario, campo de texto (normal/foco/error), tarjeta de
+  horario (disponible/ocupado/seleccionado), tarjeta de tutoría (docente+fecha+
+  hora), mensaje de estado (cargando/éxito/error).
+
+Paso 2 — Mi pantalla, "Confirmada y reprogramación" (375x812px), la cuarta de 4:
+Contenido obligatorio:
+- Mensaje de estado inequívoco arriba: ícono de check verde + texto grande
+  "¡Tutoría confirmada!" (usa el componente de mensaje de estado, variante éxito).
+- Tarjeta de tutoría con docente, fecha, hora y modalidad (usa el componente de
+  tarjeta de tutoría).
+- Botón secundario "Reprogramar", visible al pie, no escondido en un menú.
+
+Principios a aplicar: visibilidad del estado (debe ser imposible confundir si la
+reserva quedó confirmada o no), recuperación fácil (reprogramar debe encontrarse
+sin buscar), manipulación directa (reprogramar lleva de vuelta a elegir horario
+sobre el objeto visible, no un formulario aparte).
+
+Nombra el frame "04-Confirmada". En Prototype mode, deja preparada la
+interacción: tap en "Reprogramar" → navega al frame "02-Horario" (ese frame lo
+construye otro integrante del equipo en el mismo archivo; si aún no existe, deja
+la interacción pendiente de conectar).
+
+Fidelidad baja-media: sin ilustraciones ni fotos reales, solo bloques, tarjetas y
+tipografía bien jerarquizada. Al terminar, comparte el archivo con permiso de
+edición con el resto del equipo.
+```
+
 ## Checklist antes de dar por terminada tu parte
 
 - [ ] Página "🎨 Componentes" creada y compartida ANTES de que los demás empiecen sus pantallas.

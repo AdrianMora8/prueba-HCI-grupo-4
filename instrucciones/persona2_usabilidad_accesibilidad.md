@@ -45,6 +45,50 @@ Completa la tabla con indicador Y meta numérica (no dejes "Definir meta" litera
 
 **Evidencia a citar:** E2 (teclado, zoom 200%, lector de pantalla), E3 (intentos de seleccionar horarios ocupados), E6 (disponibilidad depende del docente), E9 (reconocimiento del calendario).
 
+## Prompt para la IA de Figma (pega esto directo, solo construye TU pantalla)
+
+```
+Diseña UNA sola pantalla móvil (375x812px) para la app "Tutoría Fácil UTA", una
+app para reservar tutorías académicas. Esta pantalla es "Docente y horario", la
+segunda de un flujo de 4 pantallas — no diseñes las otras 3.
+
+Sistema de diseño a usar (si ya existen estos componentes en el archivo, reutilízalos;
+si no, créalos con estos valores exactos):
+- Tipografía: familia sans-serif tipo Inter. Título 20px bold, Subtítulo 16px
+  semibold, Cuerpo 14px regular, Auxiliar 12px regular gris #6B6B6B.
+- Color: acción principal #2F6FED, fondo #FFFFFF, texto #1A1A1A, éxito #1E9E5A
+  (siempre con ícono check + texto, nunca solo color), error/ocupado #D93636
+  (siempre con ícono X + texto "No disponible", nunca solo color).
+- Grid de espaciado de 8px, márgenes laterales 16px.
+
+Contenido obligatorio de esta pantalla:
+- Selector de fecha arriba (lista horizontal de días o calendario compacto).
+- Debajo, una lista/grid de tarjetas de horario del día seleccionado, con 3
+  estados visuales claros y diferenciados por texto/ícono además de color:
+  "Disponible" (borde azul, texto "Disponible"), "Ocupado" (gris, texto "No
+  disponible", visualmente deshabilitado), "Seleccionado" (fondo azul, texto
+  blanco, ícono de check).
+- Un botón "Continuar" fijo al pie, habilitado solo cuando hay un horario
+  seleccionado.
+
+Principios a aplicar: affordance y mapeo (un horario disponible debe parecer
+claramente tocable; uno ocupado debe parecer bloqueado), prevención de errores
+(los horarios ocupados no deben responder al tap), operable por teclado (deja
+documentado en una nota de texto dentro del archivo el orden de tabulación
+esperado: fecha → horarios de izquierda a derecha / arriba a abajo → botón
+Continuar), y todo elemento interactivo con etiqueta de texto visible (no solo
+íconos), por accesibilidad.
+
+Nombra el frame "02-Horario". En Prototype mode, deja preparadas las
+interacciones: tap en un horario disponible lo marca "Seleccionado" y habilita
+"Continuar"; tap en "Continuar" → navega al frame "03-Confirmacion" (ese frame lo
+construye otro integrante del equipo en el mismo archivo; si aún no existe, deja
+la interacción pendiente de conectar).
+
+Fidelidad baja-media: sin ilustraciones ni fotos reales, solo bloques, tarjetas y
+tipografía bien jerarquizada.
+```
+
 ## Checklist antes de dar por terminada tu parte
 
 - [ ] Los 4 indicadores tienen meta numérica, ninguno dice "Definir meta".
