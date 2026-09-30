@@ -4,6 +4,38 @@
 > para ayudarte, puedas pegar este archivo completo (contexto + tu tarea) y la IA
 > tenga todo lo necesario sin inventar información fuera del caso.
 
+## Repositorio del equipo
+
+**https://github.com/AdrianMora8/prueba-HCI-grupo-4**
+
+Ya estás agregado como colaborador. Cada quien crea su propia rama `feature/...`
+desde `main` cuando empiece a trabajar (las ramas ya NO vienen pre-creadas).
+
+## Cómo trabajamos todos en el mismo Figma (un solo enlace para entregar)
+
+Como el prototipo pide **un enlace único** pero cada quien diseña una pantalla
+distinta, la forma correcta es usar **UN SOLO archivo de Figma compartido**, no 4
+archivos separados:
+
+1. La persona del issue #4 (decisiones de diseño / guía de estilo) crea el archivo
+   Figma del equipo y arma primero la página "🎨 Componentes" con el estándar visual.
+2. Esa persona comparte el archivo con el resto vía **Share → Invite** usando el
+   correo o usuario de Figma de cada integrante (permiso de "Can edit"), o con el
+   toggle "Anyone with the link can edit" si prefieren agilizar.
+3. Dentro de ESE MISMO archivo, cada integrante crea su propio frame/página con el
+   nombre de su pantalla (`01-Inicio`, `02-Horario`, `03-Confirmacion`,
+   `04-Confirmada`) y trabaja ahí. Figma es multijugador en tiempo real: todos
+   pueden estar editando simultáneamente, como en Google Docs, sin pisarse el
+   trabajo si cada quien se queda en su propio frame.
+4. Al final, entre todos conectan los 4 frames con **Prototype mode** (flechas de
+   navegación entre pantallas).
+5. Se copia **un solo enlace** de ese archivo (modo presentación o el link del
+   archivo con permiso de vista) y se pega en `prototipo/enlace_prototipo.md`. Ese
+   es el enlace que se entrega en Moodle — no hay que combinar ni exportar nada de
+   4 archivos distintos porque nunca existieron 4 archivos.
+6. Cada quien exporta la captura de SU pantalla desde ese archivo compartido y la
+   sube a `prototipo/capturas/` en su propio commit.
+
 ## El reto
 
 Diseñar desde cero **"Tutoría Fácil UTA"**, una app web móvil que permita **consultar

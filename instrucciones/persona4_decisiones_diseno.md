@@ -6,16 +6,26 @@
 > específica de E1–E10. No debe proponer iconografía o metáforas nuevas fuera de
 > las ya sugeridas (calendario, agenda, tarjeta de cita).
 
-Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub).
+Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub, y cómo trabajamos todos en un solo archivo de Figma).
+
+**Tu issue:** [#4](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/4) — asignado a MatiusJBG.
 
 ## ⚠️ Tarea prioritaria (hazla primero, en los primeros 10-15 minutos)
 
-Antes de que los demás empiecen sus pantallas, crea en el archivo compartido de
-Figma/Penpot una página **"🎨 Componentes"** con los componentes reales (no dibujos
-sueltos) del estándar visual: botón primario/secundario, campo de texto (normal/foco/
-error), tarjeta de horario (disponible/ocupado/seleccionado), tarjeta de tutoría,
-mensaje de estado. Los demás integrantes deben usar **instancias** de estos
-componentes en sus pantallas, nunca redibujarlos. Avisa al grupo en cuanto esté listo.
+A ti te toca crear el **archivo único de Figma del equipo** (ver sección "Cómo
+trabajamos todos en el mismo Figma" en `00_contexto_comun.md`):
+
+1. Crea el archivo en Figma.
+2. Comparte acceso de edición con los otros 3 integrantes (Share → Invite por
+   correo/usuario, o link con "Anyone with the link can edit").
+3. Dentro de ese mismo archivo, crea una página **"🎨 Componentes"** con los
+   componentes reales (no dibujos sueltos) del estándar visual: botón
+   primario/secundario, campo de texto (normal/foco/error), tarjeta de horario
+   (disponible/ocupado/seleccionado), tarjeta de tutoría, mensaje de estado. Los
+   demás deben usar **instancias** de estos componentes en sus pantallas, nunca
+   redibujarlos.
+4. Avisa al grupo en cuanto el archivo y los componentes estén listos, y pega el
+   enlace en `prototipo/enlace_prototipo.md`.
 
 ## Tu entregable de análisis 1: Decisiones de diseño
 
@@ -77,8 +87,8 @@ Documenta esto en el PDF (ya está decidido, tu trabajo es formalizarlo y verifi
 
 ## Pasos exactos en GitHub
 
-1. Crea el issue: **"Decisiones de diseño + guía de estilo + pantalla Confirmada/Reprogramación"**.
-2. Crea la rama: `feature/decisiones-diseno`.
+1. El issue ya existe: [#4](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/4) "Decisiones de diseño + guía de estilo + pantalla Confirmada/Reprogramación".
+2. Crea tu propia rama: `feature/decisiones-diseno` (desde `main`, aún no existe, créala tú).
 3. Commit 1 (ejemplo): `Agrega tabla de decisiones de diseno y guia de estilo`.
 4. Commit 2 (ejemplo): `Agrega pantalla Confirmada y reprogramacion con estado inequivoco`.
 5. (Commit opcional 3, si haces la iteración): `Agrega hallazgo y mejora de la prueba cruzada`.

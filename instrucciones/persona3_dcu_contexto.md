@@ -6,7 +6,9 @@
 > biografía extensa, la persona debe representar patrones de E1-E10, no rasgos
 > decorativos". Los 5 requisitos deben derivarse de evidencia real del caso.
 
-Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub).
+Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub, y cómo trabajamos todos en un solo archivo de Figma).
+
+**Tu issue:** [#3](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/3) — asignado a CristianDDGA.
 
 ## Tu entregable de análisis 1: Contexto de uso
 
@@ -74,8 +76,8 @@ Ejemplo de forma (no de contenido final):
 
 ## Pasos exactos en GitHub
 
-1. Crea el issue: **"DCU: contexto, persona, journey map, requisitos + pantalla Confirmación"**.
-2. Crea la rama: `feature/dcu-contexto`.
+1. El issue ya existe: [#3](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/3) "DCU: contexto, persona, journey map, requisitos + pantalla Confirmación".
+2. Crea tu propia rama: `feature/dcu-contexto` (desde `main`, aún no existe, créala tú).
 3. Commit 1 (ejemplo): `Agrega contexto de uso, persona y escenario basados en E1 y E2`.
 4. Commit 2 (ejemplo): `Agrega journey map, requisitos y pantalla Resumen y confirmacion`.
 5. Abre el PR, título: "DCU + Pantalla Confirmación", vincula el issue (`Closes #N`).

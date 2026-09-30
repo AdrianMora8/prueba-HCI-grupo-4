@@ -5,7 +5,9 @@
 > contigo cada sección respetando SOLO las evidencias E1–E10 listadas ahí. No debe
 > inventar datos, usuarios ni funciones fuera del alcance descrito.
 
-Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub).
+Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub, y cómo trabajamos todos en un solo archivo de Figma).
+
+**Tu issue:** [#1](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/1) — asignado a AdrianMora8.
 
 ## Tu entregable de análisis: Matriz humano-sistema
 
@@ -46,8 +48,8 @@ Completa esta tabla exacta. Sé concreto, una frase por celda, citando evidencia
 
 ## Pasos exactos en GitHub
 
-1. Crea el issue: **"Fundamentos de IHC: matriz humano-sistema + pantalla Inicio"**, descripción: "Completar matriz humano-sistema (docs/01_matriz_ihc.pdf) y construir pantalla 1 Inicio y búsqueda en el prototipo, según guía de estilo común."
-2. Crea la rama: `feature/fundamentos-ihc`.
+1. El issue ya existe: [#1](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/1) "Fundamentos de IHC: matriz humano-sistema + pantalla Inicio".
+2. Crea tu propia rama: `feature/fundamentos-ihc` (desde `main`, aún no existe, créala tú).
 3. Commit 1 (ejemplo): `Agrega matriz humano-sistema con evidencias E1, E4 y E6`.
 4. Commit 2 (ejemplo): `Agrega pantalla Inicio y busqueda con componentes del sistema de diseno`.
 5. Abre el PR desde `feature/fundamentos-ihc` hacia `main`, título: "Fundamentos de IHC + Pantalla Inicio", descripción con el issue vinculado (`Closes #N`).

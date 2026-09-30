@@ -5,7 +5,9 @@
 > NUMÉRICAS y realistas para los indicadores (no dejar "Definir meta" en blanco),
 > basadas solo en E2, E3, E4, E6 y E9. No debe inventar datos que no estén en el caso.
 
-Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub).
+Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub, y cómo trabajamos todos en un solo archivo de Figma).
+
+**Tu issue:** [#2](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/2) — asignado a Sebasjach21.
 
 ## Tu entregable de análisis 1: Indicadores de usabilidad
 
@@ -53,8 +55,8 @@ Completa la tabla con indicador Y meta numérica (no dejes "Definir meta" litera
 
 ## Pasos exactos en GitHub
 
-1. Crea el issue: **"Usabilidad y accesibilidad: indicadores + POUR + pantalla Horario"**, descripción: "Definir 3 indicadores con meta, 4 decisiones POUR, y construir pantalla 2 Docente y horario con estados diferenciados."
-2. Crea la rama: `feature/usabilidad-accesibilidad`.
+1. El issue ya existe: [#2](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/2) "Usabilidad y accesibilidad: indicadores + POUR + pantalla Horario".
+2. Crea tu propia rama: `feature/usabilidad-accesibilidad` (desde `main`, aún no existe, créala tú).
 3. Commit 1 (ejemplo): `Agrega indicadores de usabilidad con metas basadas en E3 y E4`.
 4. Commit 2 (ejemplo): `Agrega pantalla Docente y horario con estados disponible, ocupado y seleccionado`.
 5. Abre el PR, título: "Usabilidad/Accesibilidad + Pantalla Horario", vincula el issue (`Closes #N`).
