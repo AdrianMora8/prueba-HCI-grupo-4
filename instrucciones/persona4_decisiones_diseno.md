@@ -1,81 +1,96 @@
-# Integrante 4 — Construcción completa del prototipo (Figma/Penpot) + guía de estilo + prueba cruzada
+# Integrante 4 — Decisiones de diseño + Guía de estilo + Pantalla "Confirmada y reprogramación"
 
 > **Instrucciones para IA:** si vas a usar un asistente de IA, pégale este archivo
-> completo junto con `00_contexto_comun.md`. Úsala para revisar que no te falte
-> ningún elemento obligatorio por pantalla, no para inventar contenido: el
-> contenido real de cada pantalla sale de los documentos de las personas 1, 2 y 3
-> en `docs/` (léelos antes de construir).
+> completo junto con `00_contexto_comun.md`. Pídele ayuda para justificar (con
+> lenguaje de diseño, no genérico) por qué cada decisión resuelve una evidencia
+> específica de E1–E10. No debe proponer iconografía o metáforas nuevas fuera de
+> las ya sugeridas (calendario, agenda, tarjeta de cita).
 
-Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub, y cómo está dividido el trabajo).
+Lee primero `00_contexto_comun.md` (caso, evidencias, estándar visual, reglas de GitHub).
 
 **Tu issue:** [#4](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/4) — asignado a MatiusJBG.
 
-**Importante:** tú eres el único integrante que abre Figma/Penpot. Antes de
-construir, lee los 3 documentos que las otras personas suben a `docs/`:
-- `docs/01_matriz_ihc.pdf` y `docs/04_decisiones_diseno.pdf` (persona 1): metáfora, affordance, Gestalt, carga cognitiva — con especificaciones por pantalla.
-- `docs/02_usabilidad_accesibilidad.pdf` (persona 2): textos de estado, orden de teclado, mensajes de error.
-- `docs/03_dcu_contexto.pdf` (persona 3): qué debe contener cada pantalla según los 5 requisitos.
+## ⚠️ Tarea prioritaria (hazla primero, en los primeros 10-15 minutos)
 
-Si algún documento aún no está subido cuando quieras avanzar, empieza por la guía
-de estilo y la estructura de las pantallas (abajo) — no tienes que esperar a los 3
-al mismo tiempo, puedes ir incorporando cada documento a medida que llega.
+A ti te toca crear el **archivo único de Figma del equipo** (ver sección "Cómo
+trabajamos todos en el mismo Figma" en `00_contexto_comun.md`):
 
-## Paso 1 — Guía de estilo (defínela primero, antes de dibujar nada)
+1. Crea el archivo en Figma.
+2. Comparte acceso de edición con los otros 3 integrantes (Share → Invite por
+   correo/usuario, o link con "Anyone with the link can edit").
+3. Dentro de ese mismo archivo, crea una página **"🎨 Componentes"** con los
+   componentes reales (no dibujos sueltos) del estándar visual: botón
+   primario/secundario, campo de texto (normal/foco/error), tarjeta de horario
+   (disponible/ocupado/seleccionado), tarjeta de tutoría, mensaje de estado. Los
+   demás deben usar **instancias** de estos componentes en sus pantallas, nunca
+   redibujarlos.
+4. Avisa al grupo en cuanto el archivo y los componentes estén listos, y pega el
+   enlace en `prototipo/enlace_prototipo.md`.
 
-| Elemento | Definición |
-|---|---|
-| Tipografía | Título 20px bold · Subtítulo 16px semibold · Cuerpo 14px regular · Auxiliar 12px regular gris `#6B6B6B` |
-| Color | Acción principal `#2F6FED` · Fondo `#FFFFFF` · Texto `#1A1A1A` · Éxito `#1E9E5A` (+ ícono ✓ + texto) · Error `#D93636` (+ ícono ✕ + texto) |
-| Componentes | Botón primario/secundario, campo de texto (normal/foco/error), tarjeta de horario (disponible/ocupado/seleccionado), tarjeta de tutoría, mensaje de estado |
-| Consistencia | Mismas etiquetas, misma ubicación de acciones, misma respuesta del sistema en las 4 pantallas |
+## Tu entregable de análisis 1: Decisiones de diseño
 
-Crea estos componentes **una sola vez** en una página "🎨 Componentes" de tu archivo
-y reutilízalos como instancias en las 4 pantallas — no los redibujes por pantalla.
+Completa la tabla exacta, citando la evidencia indicada (no cambies las evidencias, ya están definidas por el caso):
 
-## Paso 2 — Construir las 4 pantallas conectadas
+| Concepto | Decisión solicitada | Evidencia |
+|---|---|---|
+| Metáfora | Selecciona calendario, agenda, tarjeta de cita u otra metáfora y explica el modelo mental que aprovecha | E9 |
+| Affordance y mapeo | Explica por qué un horario parece seleccionable y cómo la acción se relaciona con el resultado | E3 y E9 |
+| Manipulación directa | Permite seleccionar o cambiar un horario actuando sobre el objeto visible | E10 |
+| Retroalimentación | Muestra estados de carga, selección, confirmación y error con texto comprensible | E3, E5 y E8 |
+| Carga cognitiva | Prioriza información, limita opciones simultáneas, evita que la persona memorice datos | E4 y E5 |
+| Gestalt | Aplica y justifica al menos 3 leyes entre proximidad, semejanza, continuidad, cierre, figura-fondo y destino común | Diseño (justificación propia, visible en las 4 pantallas) |
+| Riesgo cultural | No dependas de un ícono, color o símbolo cuyo significado pueda ser ambiguo | E2 y E9 |
 
-| # | Pantalla | Contenido mínimo obligatorio | Conceptos que deben verse |
-|---|---|---|---|
-| 1 | Inicio y búsqueda | Objetivo claro, acceso a "Reservar" y a "Mis tutorías" | Jerarquía, figura-fondo, consistencia, navegación |
-| 2 | Docente y horario | Disponibilidad por fecha; horario seleccionado y ocupado diferenciados (texto/ícono, no solo color) | Calendario, affordance, mapeo, teclado, prevención de errores |
-| 3 | Resumen y confirmación | Docente, fecha, hora, modalidad, acción "Confirmar", opción "Volver" | Reconocimiento, carga cognitiva, retroalimentación, corrección |
-| 4 | Confirmada y reprogramación | Estado inequívoco de "Confirmado", datos de la cita, entrada al cambio de horario | Visibilidad del estado, recuperación, manipulación directa |
+## Tu entregable de análisis 2: Guía de estilo (formaliza el estándar ya definido)
 
-Para cada pantalla, aplica literalmente las especificaciones que dejaron las
-personas 1, 2 y 3 en sus PDFs (metáforas, textos de error exactos, orden de
-teclado, contenido derivado de los requisitos). No decidas contenido nuevo por tu
-cuenta si ya está especificado — tu trabajo es construir fielmente lo analizado,
-no reinterpretarlo.
+Documenta esto en el PDF (ya está decidido, tu trabajo es formalizarlo y verificar que las 4 pantallas lo cumplan):
 
-Conecta las 4 pantallas con **Prototype mode** (flechas de navegación) para que el
-recorrido completo (reservar → confirmar → ver confirmación → reprogramar) se
-pueda ejecutar sin explicación verbal.
+- **Tipografía:** jerarquía título/subtítulo/cuerpo/auxiliar (valores en `00_contexto_comun.md`).
+- **Color:** acción principal, fondo, texto, éxito, error — recuerda que los estados siempre llevan texto o ícono con etiqueta, nunca solo color (E2, E9).
+- **Componentes:** botón, campo, horario disponible, tarjeta de tutoría, mensaje de estado.
+- **Consistencia:** mismas etiquetas, misma ubicación de acciones, misma respuesta del sistema en las 4 pantallas — **revisa las pantallas 1, 2 y 3 de tus compañeros y anota cualquier inconsistencia antes de cerrar tu PR.**
 
-## Paso 3 — Prueba cruzada e iteración
+**Dónde lo guardas:** `docs/04_decisiones_diseno.pdf` (tabla de decisiones + guía de estilo).
 
-1. Entrega el prototipo YA CONECTADO a una persona de otro equipo, sin explicarle cómo funciona.
+## Tu pantalla: "4. Confirmada y reprogramación"
+
+**Contenido mínimo obligatorio:**
+- Estado inequívoco de "Confirmado" (texto + ícono, componente de mensaje de estado).
+- Datos de la cita visibles (docente, fecha, hora).
+- Entrada clara para iniciar el cambio de horario (reprogramar).
+
+**Conceptos que debes evidenciar:**
+- **Visibilidad del estado:** que quede claro e inconfundible que la reserva ya está confirmada (contra E5, confirmaciones que se pierden).
+- **Recuperación:** la reprogramación debe ser fácil de encontrar y ejecutar, no escondida.
+- **Manipulación directa:** reprogramar se hace actuando sobre el horario visible, igual que en la pantalla 2, no con un formulario aparte.
+
+**Evidencia a citar:** E5 (confirmaciones perdidas → aquí se resuelve con estado inequívoco), E10 (posibilidad de corregir/cambiar), E7 (evitar que la info quede desactualizada — la reprogramación debe reflejarse de inmediato).
+
+## Tarea compartida que coordinas tú: prueba cruzada + iteración
+
+1. Entrega el prototipo YA CONECTADO (las 4 pantallas) a una persona de otro equipo, sin explicarle cómo funciona.
 2. Pídele: "reserva una tutoría para el jueves y luego cambia el horario".
-3. Registra: si completó la tarea, tiempo aproximado, error o duda observable, comentario final.
+3. Registra: si completó la tarea, tiempo aproximado, error u duda observable, comentario final.
 4. Aplica una mejora concreta relacionada con el hallazgo (guarda captura antes/después).
 5. Documenta todo en `evaluacion/prueba_iteracion.md` (tarea, participante, resultado, tiempo, hallazgo, antes, después).
 6. Haz el commit de esa mejora vinculado al issue/PR correspondiente.
 
 ## Checklist antes de dar por terminada tu parte
 
-- [ ] Archivo de Figma/Penpot creado, con página "🎨 Componentes" reutilizada en las 4 pantallas.
-- [ ] Las 4 pantallas cumplen su contenido mínimo obligatorio de la tabla de arriba.
-- [ ] Incorporaste las especificaciones de las personas 1, 2 y 3 (no inventaste contenido nuevo).
-- [ ] Las 4 pantallas están conectadas y navegables en Prototype mode.
+- [ ] Página "🎨 Componentes" creada y compartida ANTES de que los demás empiecen sus pantallas.
+- [ ] Tabla de decisiones de diseño completa con las evidencias exactas indicadas.
+- [ ] Guía de estilo documentada y verificada contra las 4 pantallas reales (no solo la tuya).
+- [ ] Pantalla 4 muestra estado confirmado + datos + entrada a reprogramar.
 - [ ] Prueba cruzada ejecutada y documentada en `evaluacion/prueba_iteracion.md`.
-- [ ] Enlace del archivo pegado en `prototipo/enlace_prototipo.md`, verificado en ventana privada.
-- [ ] Capturas de las 4 pantallas en `prototipo/capturas/`.
+- [ ] Exportaste `docs/04_decisiones_diseno.pdf`.
+- [ ] Exportaste la captura de tu pantalla a `prototipo/capturas/`.
 
 ## Pasos exactos en GitHub
 
-1. El issue ya existe: [#4](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/4) "Construir el prototipo completo + guía de estilo + prueba cruzada e iteración".
-2. Crea tu propia rama: `feature/prototipo-completo` (desde `main`, créala tú).
-3. Commit 1 (ejemplo): `Agrega guia de estilo y sistema de componentes reutilizables`.
-4. Commit 2 (ejemplo): `Agrega las 4 pantallas conectadas del prototipo`.
-5. Commit 3 (ejemplo, cuando esté lista): `Agrega hallazgo y mejora de la prueba cruzada`.
-6. Abre el PR, título: "Prototipo completo + guía de estilo + prueba cruzada", vincula el issue (`Closes #4`).
+1. El issue ya existe: [#4](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/4) "Decisiones de diseño + guía de estilo + pantalla Confirmada/Reprogramación".
+2. Crea tu propia rama: `feature/decisiones-diseno` (desde `main`, créala tú).
+3. Commit 1 (ejemplo): `Agrega tabla de decisiones de diseno y guia de estilo`.
+4. Commit 2 (ejemplo): `Agrega pantalla Confirmada y reprogramacion con estado inequivoco`.
+5. (Commit opcional 3, si haces la iteración): `Agrega hallazgo y mejora de la prueba cruzada`.
+6. Abre el PR, título: "Decisiones de diseño + Pantalla Confirmación", vincula el issue (`Closes #4`).
 7. Pide revisión a otro integrante.
