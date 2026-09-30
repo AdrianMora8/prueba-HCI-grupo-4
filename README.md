@@ -37,7 +37,6 @@ errores y acceso mediante teclado o tecnologías de apoyo?
 - `docs/` — PDFs del análisis (matriz IHC, usabilidad/accesibilidad, DCU, decisiones de diseño).
 - `prototipo/` — capturas de las 4 pantallas y `enlace_prototipo.md`.
 - `evaluacion/` — `prueba_iteracion.md` con la prueba cruzada y la mejora aplicada.
-- `instrucciones/` — guía de trabajo individual de cada integrante (contexto común + tarea específica).
 
 ## Resumen de la iteración
 
