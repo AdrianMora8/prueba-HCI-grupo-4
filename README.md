@@ -29,7 +29,7 @@ errores y acceso mediante teclado o tecnologías de apoyo?
 
 ## Enlaces
 
-- Prototipo navegable: _____________________ (ver `prototipo/enlace_prototipo.md`)
+- Prototipo navegable: https://www.figma.com/design/tj2MdTKhmWBczLiNuNzjOf/Prueba02?node-id=0-1&p=f&t=gKcvuArZEFNzeN9r-0 (ver también `prototipo/enlace_prototipo.md`)
 - Tablero FigJam / PDF de análisis: ver `docs/`
 
 ## Estructura del repositorio
