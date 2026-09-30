@@ -16,12 +16,16 @@ errores y acceso mediante teclado o tecnologías de apoyo?
 
 ## Integrantes y usuarios de GitHub
 
-| Integrante | Usuario GitHub | Rol |
-|---|---|---|
-| 1. _____________________ | @_____________ | Fundamentos de IHC + Pantalla Inicio |
-| 2. _____________________ | @_____________ | Usabilidad y Accesibilidad + Pantalla Horario |
-| 3. _____________________ | @_____________ | DCU (contexto/persona/journey/requisitos) + Pantalla Confirmación |
-| 4. _____________________ | @_____________ | Decisiones de diseño, guía de estilo + Pantalla Confirmada/Reprogramación |
+| Integrante | Usuario GitHub | Rol | Issue |
+|---|---|---|---|
+| 1. _____________________ | @AdrianMora8 | Fundamentos de IHC + Decisiones de diseño (análisis, sin Figma) | [#1](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/1) |
+| 2. _____________________ | @Sebasjach21 | Usabilidad y Accesibilidad (análisis, sin Figma) | [#2](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/2) |
+| 3. _____________________ | @CristianDDGA | DCU: contexto, persona, journey map, requisitos (análisis, sin Figma) | [#3](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/3) |
+| 4. _____________________ | @MatiusJBG | Construye el prototipo completo (4 pantallas) + guía de estilo + prueba cruzada | [#4](https://github.com/AdrianMora8/prueba-HCI-grupo-4/issues/4) |
+
+> Solo la persona 4 trabaja en Figma/Penpot. Las personas 1, 2 y 3 entregan
+> análisis con especificaciones exactas por pantalla (en `docs/`) para que la
+> persona 4 las implemente sin tener que interpretar nada por su cuenta.
 
 ## Enlaces
 

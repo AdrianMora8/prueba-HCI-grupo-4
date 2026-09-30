@@ -11,30 +11,32 @@
 Ya estás agregado como colaborador. Cada quien crea su propia rama `feature/...`
 desde `main` cuando empiece a trabajar (las ramas ya NO vienen pre-creadas).
 
-## Cómo trabajamos todos en el mismo Figma (un solo enlace para entregar)
+## Cómo está dividido el trabajo (una sola persona construye el prototipo)
 
-Como el prototipo pide **un enlace único** pero cada quien diseña una pantalla
-distinta, la forma correcta es usar **UN SOLO archivo de Figma compartido**, no 4
-archivos separados:
+Para que nadie dependa de otro mientras trabaja, y para que el prototipo sea
+visualmente consistente sin tener que coordinar edición simultánea en Figma, el
+equipo se organiza así:
 
-1. La persona del issue #4 (decisiones de diseño / guía de estilo) crea el archivo
-   Figma del equipo y arma primero la página "🎨 Componentes" con el estándar visual.
-2. Esa persona comparte el archivo con el resto vía **Share → Invite** usando el
-   correo o usuario de Figma de cada integrante (permiso de "Can edit"), o con el
-   toggle "Anyone with the link can edit" si prefieren agilizar.
-3. Dentro de ESE MISMO archivo, cada integrante crea su propio frame/página con el
-   nombre de su pantalla (`01-Inicio`, `02-Horario`, `03-Confirmacion`,
-   `04-Confirmada`) y trabaja ahí. Figma es multijugador en tiempo real: todos
-   pueden estar editando simultáneamente, como en Google Docs, sin pisarse el
-   trabajo si cada quien se queda en su propio frame.
-4. Al final, entre todos conectan los 4 frames con **Prototype mode** (flechas de
-   navegación entre pantallas).
-5. Se copia **un solo enlace** de ese archivo (modo presentación o el link del
-   archivo con permiso de vista) y se pega en `prototipo/enlace_prototipo.md`. Ese
-   es el enlace que se entrega en Moodle — no hay que combinar ni exportar nada de
-   4 archivos distintos porque nunca existieron 4 archivos.
-6. Cada quien exporta la captura de SU pantalla desde ese archivo compartido y la
-   sube a `prototipo/capturas/` en su propio commit.
+- **Personas 1, 2 y 3 (análisis):** cada una investiga su tema y entrega un
+  **documento con especificaciones exactas** de qué debe aparecer en cuál pantalla
+  y por qué (citando evidencia E1–E10). No tocan Figma. Su commit son PDFs/markdown
+  en `docs/`.
+- **Persona 4 (prototipo):** es la única que abre Figma. Toma las especificaciones
+  de las otras 3 personas (ya publicadas en sus PDFs dentro de `docs/`, disponibles
+  para todos en el repo) y construye las 4 pantallas conectadas, aplicando también
+  la guía de estilo. Esto evita conflictos de edición y da un solo archivo, un solo
+  enlace, un solo estilo consistente.
+
+**Por qué nadie depende de nadie en tiempo real:** las personas 1, 2 y 3 trabajan en
+paralelo desde el inicio (todas parten de las mismas evidencias E1–E10, no del
+resultado de otra). Solo publican sus especificaciones (commit + push) para que la
+persona 4 las lea cuando le toque construir cada pantalla — no necesitan estar
+conectados al mismo tiempo ni coordinar en vivo.
+
+**Entrega del enlace:** la persona 4 crea el archivo de Figma/Penpot, construye las
+4 pantallas con **Prototype mode** conectándolas, y copia el enlace (modo
+presentación o vista) en `prototipo/enlace_prototipo.md`. Ese es el único enlace
+que se entrega en Moodle.
 
 ## El reto
 
